@@ -3,7 +3,7 @@ module.exports = {
     port: 8081,
     startMessage: "Server is running on port:"
   },
-  configs: {
-    
+  db: {
+    url: "mongodb://localhost:27017/bookstore"
   }
 }
