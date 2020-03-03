@@ -1,7 +1,7 @@
 module.exports = {
-  config: {
-    routes: {
-      BOOKS: "/books"
-    }
-  }
+	config: {
+		routes: {
+			BOOKS: "/books",
+		},
+	},
 }
