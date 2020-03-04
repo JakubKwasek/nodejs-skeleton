@@ -1,9 +1,9 @@
 module.exports = (db = null) => {
 	const router = require("express").Router();
-	const { config } = require("./config");
-	const { getAllBooksCtrl } = require("./controller")(db);
+	const { getAllBooksCtrl } = require("./controllers/getAllBooksCtrl")(db);
 	const { testMiddleware } = require("./middlewares/testMiddleware")({});
 
-	router.get(config.routes.BOOKS, testMiddleware, getAllBooksCtrl);
+	router.get("/books", testMiddleware, getAllBooksCtrl);
+
 	return router;
 }

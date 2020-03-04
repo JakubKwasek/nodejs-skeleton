@@ -1,6 +1,6 @@
 (async () => {
-	const { server, db } = require("./configs");
-	// const dbConnection = await require("./db")(db);
+	const { server, db } = require("../configs/index.json");
+	// const dbConnection = await require("./database")(db);
 	const dbConnection = {};
 	const app = require("./app")(dbConnection, server);
 
