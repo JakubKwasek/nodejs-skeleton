@@ -1,16 +1,16 @@
 module.exports = (db = null) => {
 	const path = require("path");
-	// const model = require("../models/getAllBooks")(db);
+	const model = require("../models/getAllBooksModel")(db);
 
 	return {
-		async getAllBooksCtrl(req,res,next) {
-			// const books = await model.findAll()
+		async getAllBooksCtrl(req, res, next) {
+			const books = await model.findAll();
 			res.format({
 				"text/html"() {
 					res.render(
 						path.join(__dirname, "../", "/views/books"),
 						{
-							books: {description: "test description" },
+							books,
 							layout:  path.join("../", "src/modules/bookStore/views/layout"),
 						}
 					)

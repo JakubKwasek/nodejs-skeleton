@@ -1,4 +1,8 @@
 <div>
-  <p>Test element</p>
-  <p>{{books.description}}</p>
+  <p>Books</p>
+	<ul class="people_list">
+  	{{#books}}
+    	<li>{{title}}:  {{author}}</li>
+  	{{/books}}
+	</ul>
 </div>

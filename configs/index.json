@@ -4,6 +4,6 @@
 		"startMessage": "Server is running on port:"
 	},
 	"db": {
-		"url": "mongodb://localhost:27017/bookstore"
+		"url": "mongodb://127.0.0.1:27017/bookstore"
 	}
 }
